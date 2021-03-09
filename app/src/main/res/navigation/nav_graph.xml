@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.findmovies.fragments.home.HomeFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_homeFragment_to_movieInfoFragment"
+            app:destination="@id/movieInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.findmovies.fragments.category.CategoryFragment"
+        android:label="asdasd">
+        <action
+            android:id="@+id/action_categoryFragment_to_moviesWithCategoryFragment"
+            app:destination="@id/moviesWithCategoryFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_movieInfoFragment"
+            app:destination="@id/movieInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.findmovies.fragments.favourite.FavouriteFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_movieInfoFragment"
+            app:destination="@id/movieInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieInfoFragment"
+        android:name="com.example.findmovies.fragments.MovieInfoFragment"
+        android:label="MovieInfoFragment" >
+        <action
+            android:id="@+id/action_movieInfoFragment_self"
+            app:destination="@id/movieInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesWithCategoryFragment"
+        android:name="com.example.findmovies.fragments.movies_with_category.MoviesWithCategoryFragment"
+        android:label="MoviesWithCategory" >
+        <action
+            android:id="@+id/action_moviesWithCategoryFragment_to_movieInfoFragment"
+            app:destination="@id/movieInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.findmovies.fragments.SettingFragment"
+        android:label="SettingFragment" />
+</navigation>

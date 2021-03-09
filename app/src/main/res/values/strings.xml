@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FindMovies</string>
+    <string name="api_key">26c9c63599343ed01a5489135d890a5e</string>
+    <string name="base_url">https://api.themoviedb.org/3/</string>
+    <string name="shared_pref_name">DarkModePreferences</string>
+    <string name="dark_mode_key">darkMode</string>
+    <string name="share_subject">Share Movie</string>
+    <string name="movie_id_for_navigate">movieId</string>
+</resources>
